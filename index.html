@@ -4,38 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>King//Midas</title>
+    
+    <!-- External Stylesheet (optional but recommended) -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Optional Meta Description for SEO -->
+    <meta name="description" content="Official website of King//Midas. Designed by KimuraTrap Studios.">
 </head>
 <body>
-    <!-- We need sections for Header, Content, and Footer. Each section should have subsections for links, social media, and so on... 
-    The more Div tags we have (within reason) the more control over the site we have. Make sure that you comment your code and push to 
-    your branch of the repo. Never push to Main, we must protect the Main branch at all times!-->
+    <!-- Header Section (Static at the top) -->
+    <header class="header-wrapper">
+        <!-- Brand/Logo -->
+        <div class="brand-title">
+            <h1><center>KING//MIDAS</center></h1>
+        </div>
+        <!-- Future: Navigation links could go here -->
+    </header>
 
-    <!-- Header Section -->
-     <!-- This will be static at the top of the site! -->
-    <div class="brand-title">
-        <h1><center>KING//MIDAS</center></h1>
-    </div>
-    
+    <!-- Main Content Section -->
+    <main class="content-section-wrapper">
+        <!-- Primary Message -->
+        <section class="announcement">
+            <p>Website under construction. Please check back later for updates.</p>
+        </section>
 
-    <!-- Content Section -->
-    <div class="content-section-wrapper">
-        Website under construction. Please check back later for updates.
+        <!-- Scroll-to-top Button (to be styled and handled with JS later) -->
+        <button id="scrollTopBtn" title="Go to top">↑</button>
+    </main>
 
-        <!-- Button to return to top needs to float on the bottom right of the screen at all times once user starts scrolling. -->
-    </div>
-
-
-    <!-- Footer Section -->
-     <!-- Likely going to be a static section -->
-    <div class="footer-section-wrapper">
+    <!-- Footer Section (Likely static) -->
+    <footer class="footer-section-wrapper">
         <!-- Contact Information -->
-        Phone Email ContactForm 
+        <div class="contact-info">
+            <p><strong>Contact:</strong> Phone | Email | <a href="#">Contact Form</a></p>
+        </div>
+
         <!-- Social Media Links -->
-        Facebook Twitter Instagram LinkedIn TikTok
+        <div class="social-links">
+            <p>
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">LinkedIn</a> |
+                <a href="#">TikTok</a>
+            </p>
+        </div>
 
         <hr>
-        <p><center>© 2025 King//Midas</center></p>
-        <p><center>Designed and Developed by KimuraTrap Studios LLC</center></p>
-    </div>
+
+        <!-- Legal & Attribution -->
+        <div class="footer-credits">
+            <p>© 2025 King//Midas</p>
+            <p>Designed and Developed by <a href="https://kimuratrapstudios.com" target="_blank">KimuraTrap Studios LLC</a></p>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript for Scroll-to-Top -->
+    <script>
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+        window.onscroll = () => {
+            scrollTopBtn.style.display = (window.scrollY > 100) ? "block" : "none";
+        };
+
+        scrollTopBtn.onclick = () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
 </body>
 </html>
