@@ -9,7 +9,7 @@
 }
 
 .home-section img {
-    max-width: 50%;
+    max-width: 30%;
     height: auto;
     margin: 10px 0;
 }
@@ -18,12 +18,11 @@
     display: grid; /* Enable CSS Grid layout */
     grid-template-columns: repeat(2, 1fr); /* Create 2 columns, each taking 1 fraction of available space */
     grid-template-rows: repeat(2, 1fr); /* Create 2 rows, each taking 1 fraction of available space */
-    border: 2px solid black; /* (Optional) Add a border for visualization */
 }
 
 .grid-item {
     display: flex; /* (Optional) Use flexbox for centering content within items */
     justify-content: center; /* (Optional) Center horizontally */
     align-items: center; /* (Optional) Center vertically */
-    border: 2px solid #dcaa2c; /* (Optional) Add a border for visualization */
+    
 }
