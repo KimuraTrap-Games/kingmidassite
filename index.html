@@ -7,6 +7,7 @@
     
     <!-- External Stylesheet (optional but recommended) -->
     <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/home.css">
     <link rel="stylesheet" href="/styles/footer.css">
     <link rel="stylesheet" href="/styles/common.css">
 
@@ -15,21 +16,45 @@
 </head>
 <body>
     <!-- Header Section (Static at the top) -->
-    <header class="header-wrapper">
+    <div class="header-wrapper">
         <!-- Brand/Logo -->
         <div class="brand-title">
             <h1><center>KING//MIDAS</center></h1>
         </div>
         <!-- Future: Navigation links could go here -->
-    </header>
+        <nav class="navigation">
+            <!-- Links will navigate the cascading page of the site, taking the user to each section of the site. -->
+            <a href="#bio">Home</a>
+            <a href="#bio">Bio</a>
+            <a href="#events">Events</a>
+            <a href="#media">Media</a>
+            <a href="#contact">Contact</a>
+            <a href="#merch">Merch</a>
+        </div>
+    </div>
 
     <!-- Main Content Section -->
     <main class="content-section-wrapper">
         <!-- Primary Message -->
-        <section class="announcement">
-            <p>Website under construction. Please check back later for updates.</p>
-        </section>
+        <div class="home-section">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="/images/KMBand.jpg" alt="">
+                </div>
 
+                <div class="grid-item">
+                    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non ab dolore id quos deleniti architecto inventore illum. Sit tempora magnam soluta maiores sed velit, vitae fugit sapiente ab repellendus quas.</h4>
+                </div>
+
+                <div class="grid-item">
+                    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non ab dolore id quos deleniti architecto inventore illum. Sit tempora magnam soluta maiores sed velit, vitae fugit sapiente ab repellendus quas.</h4>
+                </div>
+
+                <div class="grid-item">
+                    <img src="/images/KMBand.jpg" alt="">
+                </div>
+            </div>
+        </div>
         <!-- Scroll-to-top Button (to be styled and handled with JS later) -->
         <button id="scrollTopBtn" title="Go to top">↑</button>
     </main>

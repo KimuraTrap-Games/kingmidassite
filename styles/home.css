@@ -1,0 +1,29 @@
+.home-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a; /* Dark background for the home section */
+    padding: 20px;
+    color: white; /* White text for contrast */
+    width: 100%; /* Full width of the viewport */
+    margin: -10px; /* Adjust margin to align with other sections */
+}
+
+.home-section img {
+    max-width: 50%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.grid-container {
+    display: grid; /* Enable CSS Grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Create 2 columns, each taking 1 fraction of available space */
+    grid-template-rows: repeat(2, 1fr); /* Create 2 rows, each taking 1 fraction of available space */
+    border: 2px solid black; /* (Optional) Add a border for visualization */
+}
+
+.grid-item {
+    display: flex; /* (Optional) Use flexbox for centering content within items */
+    justify-content: center; /* (Optional) Center horizontally */
+    align-items: center; /* (Optional) Center vertically */
+    border: 2px solid #dcaa2c; /* (Optional) Add a border for visualization */
+}

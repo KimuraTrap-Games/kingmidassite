@@ -1,0 +1,11 @@
+.header-wrapper {
+    background-color: #183059; /* Dark background for the header */
+    color: #dcaa2c; /* White text for contrast */
+    font-family: 'Grand Barron Distressed Regular', sans-serif;
+    text-align: center; /* Center align the header text */
+    z-index: 9999; /* Ensure header is above other content */
+    position: sticky; /* Sticky position for header */
+    top: 0; /* Stick to the top of the viewport */
+    border: 2px solid #dcaa2c; /* Optional: Add a border for visualization */
+    margin: -10px; /* Adjust margin to align with other sections */
+}

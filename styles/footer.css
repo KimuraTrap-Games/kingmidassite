@@ -1,0 +1,8 @@
+.footer-section-wrapper {
+    background-color: #183059; /* Dark background for the footer */
+    color: #dcaa2c; /* White text for contrast */
+    padding: 20px; /* Padding around the footer content */
+    font-family: 'Grand Barron Distressed Regular', sans-serif;
+    text-align: center; /* Center align the footer text */
+    margin: -20px;
+}
