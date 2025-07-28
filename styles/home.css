@@ -26,3 +26,8 @@
     align-items: center; /* (Optional) Center vertically */
     
 }
+
+.grid-item img {
+    border: 2px solid #dcaa2c; /* Optional: Add a border for visualization */
+    box-shadow: 1px 1px 5px;
+}
