@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/topbtn.css">
 
     <!-- Optional Meta Description for SEO -->
     <meta name="description" content="Official website of King//Midas. Designed by KimuraTrap Studios.">
@@ -24,7 +25,7 @@
         <!-- Future: Navigation links could go here -->
         <nav class="navigation">
             <!-- Links will navigate the cascading page of the site, taking the user to each section of the site. -->
-            <a href="#home">Home</a>
+            <a href="#">Home</a>
             <a href="#bio">Bio</a>
             <a href="#events">Events</a>
             <a href="#media">Media</a>
@@ -80,8 +81,40 @@
                 <a href="www.youtube.com" target="_blank">Song</a>
             </div>
         </div>
-        <!-- Scroll-to-top Button (to be styled and handled with JS later) -->
-        <button id="scrollTopBtn" title="Go to top">↑</button>
+
+        <div class="contact-section">
+            <!-- Replace with Formspree -->
+            <h1>Contact Us</h1>
+            <p>If you have any questions, booking inquiries, or just want to say hi, feel free to reach out!</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <div class="merch-section">
+            <h1>Merchandise</h1>
+            <p>Check out our latest merch! Click on the links below to purchase.</p>
+            <ul>
+                <li><a href="https://example.com/merch1" target="_blank">T-Shirt</a></li>
+                <li><a href="https://example.com/merch2" target="_blank">Hoodie</a></li>
+                <li><a href="https://example.com/merch3" target="_blank">Poster</a></li>
+            </ul>
+        </div>
+
+        <div class="return-to-top-button">
+            <button>
+                <a href="#top">Top</a>
+            </button>
+        </div>
     </main>
 
     <!-- Footer Section (Likely static) -->
@@ -110,18 +143,5 @@
             <p><center>Designed and Developed by <a href="https://kimuratrapstudios.com" target="_blank">KimuraTrap Studios LLC</a></center></p>
         </div>
     </footer>
-
-    <!-- Optional JavaScript for Scroll-to-Top -->
-    <script>
-        const scrollTopBtn = document.getElementById("scrollTopBtn");
-
-        window.onscroll = () => {
-            scrollTopBtn.style.display = (window.scrollY > 100) ? "block" : "none";
-        };
-
-        scrollTopBtn.onclick = () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        };
-    </script>
 </body>
 </html>
