@@ -4,6 +4,15 @@
   src: url('../fonts/Grand-Baron-Distressed.ttf') format('truetype');
 }
 
+/* Prevent anchor jump content from being hidden by sticky header */
+:root {
+  scroll-padding-top: 120px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Header styling */
 .header-wrapper {
   background-color: #183059;

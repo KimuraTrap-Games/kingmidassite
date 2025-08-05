@@ -1,3 +1,18 @@
 body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
+<<<<<<< Updated upstream
+=======
+
+.content-section-wrapper {
+    background-color: #1a1a1a; /* Dark background for the home section */
+    color: white;
+    margin: -10px; /* Adjust margin to align with other sections */
+    padding: 20px;
+}
+
+h1, h2 {
+
+    font-family: 'KingMidasFont';
+}
+>>>>>>> Stashed changes
