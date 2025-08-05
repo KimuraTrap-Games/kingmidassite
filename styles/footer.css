@@ -6,3 +6,13 @@
     text-align: center; /* Center align the footer text */
     margin: -20px;
 }
+
+.footer-section-wrapper a {
+    color: white;
+    text-decoration: none; /* Remove underline from links */
+}
+
+.kts-link a {
+    color: red;
+    text-decoration: none;
+}
