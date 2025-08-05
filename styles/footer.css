@@ -13,6 +13,14 @@
 }
 
 .kts-link a {
+    font-family: "KingMidasFont";
     color: red;
     text-decoration: none;
 }
+
+.footer-credits, p {
+    font-family: "KingMidasFont";
+    color: red;
+    text-decoration: none;
+}
+

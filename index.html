@@ -41,7 +41,7 @@
     <main class="content-section-wrapper">
         <!-- Primary Message -->
 
-        <div class="home-section">
+        <div class="home-section" id="#">
             <div class="grid-container">
                 <div class="grid-item">
                     <img src="images/KMBand.jpg" alt="Poster of the band for a king midas concert.">
@@ -141,6 +141,108 @@
             </div>
         </div>
 
+        <!-- Scroll-to-top Button (to be styled and handled with JS later) -->
+        <button id="scrollTopBtn" title="Go to top">↑</button>
+        <div class="bio-section" id="bio">
+            <h1 class="section-title">Meet the Band</h1>
+            <div class="grid-container">
+                <!-- Jeremy -->
+                <div class="grid-item image">
+                    <img src="images/jeremy1.jpg" alt="Jeremy">
+                </div>
+                <div class="grid-item bio">
+                    <h2>Jeremy</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam deserunt vitae animi quo ipsum ea, cupiditate quisquam consequatur. Harum, ipsam.</p>
+                </div>
+
+                <!-- Axel -->
+                <div class="grid-item bio">
+                    <h2>Axel</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, dolore. Expedita blanditiis dolore harum ratione laudantium qui vel esse animi.</p>
+                </div>
+                <div class="grid-item image">
+                    <img src="images/axel1color.jpg" alt="Axel">
+                </div>
+
+                <!-- Doug -->
+                <div class="grid-item image">
+                    <img src="images/bandpic1.jpg" alt="Jeremy">
+                </div>
+                <div class="grid-item bio">
+                    <h2>Doug</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam deserunt vitae animi quo ipsum ea, cupiditate quisquam consequatur. Harum, ipsam.</p>
+                </div>                
+                
+                <!-- Jose -->
+                <div class="grid-item bio">
+                    <h2>Jose</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, dolore. Expedita blanditiis dolore harum ratione laudantium qui vel esse animi.</p>
+                </div>
+                <div class="grid-item image">
+                    <img src="images/bandpic2.jpg" alt="Axel">
+                </div>
+                
+                <!-- Other -->
+                <div class="grid-item image">
+                    <img src="images/KMBand.jpg" alt="Jeremy">
+                </div>
+                <div class="grid-item bio">
+                    <h2>Drummer</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam deserunt vitae animi quo ipsum ea, cupiditate quisquam consequatur. Harum, ipsam.</p>
+                </div>
+                
+                <!-- Other -->
+                
+            </div>
+        </div>
+
+        <div class="event-section" id="events">
+            <h1>Upcoming Events</h1>
+                <ul>
+                    <li>Event 1: Date, Location, Details</li>
+                    <li>Event 2: Date, Location, Details</li>
+                    <li>Event 3: Date, Location, Details</li>
+                </ul>
+        </div>
+
+        <div class="media-section" id="media">
+            <h1 class="section-title">Media</h1>
+            <p class="section-description">Check out our latest music videos, photos, and more!</p>
+
+            <div class="media-gallery">
+                <!-- YouTube or Image Links -->
+                <a href="https://www.youtube.com/watch?v=abc123" target="_blank" class="media-item">🎵 Song 1</a>
+                <a href="https://www.youtube.com/watch?v=xyz456" target="_blank" class="media-item">🎵 Song 2</a>
+                <a href="https://www.youtube.com/watch?v=def789" target="_blank" class="media-item">🎵 Song 3</a>
+
+                <!-- Images -->
+                <img src="images/bandpic1.jpg" alt="">
+                <img src="images/bandpic2.jpg" alt="">
+                <img src="images/bandpic2.jpg" alt="">
+
+            </div>
+        </div>
+
+        <div class="contact-section" id="contact">
+        <!-- Replace with Formspree -->
+    <h1>Contact Us</h1>
+    <p>If you have any questions, booking inquiries, or just want to say hi, feel free to reach out!</p>
+    <form action="#" method="post">
+        <label for="name" style="display:block;">Name:</label>
+        <input type="text" id="name" name="name" required style="display:block; width:300px; margin-bottom:10px;">
+
+        <label for="email" style="display:block;">Email:</label>
+        <input type="email" id="email" name="email" required style="display:block; width:300px; margin-bottom:10px;">
+
+        <label for="message" style="display:block;">Message:</label>
+        <textarea id="message" name="message" rows="4" required style="display:block; width:300px; margin-bottom:10px;"></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+
+        <div class="merch-section" id="merch">
         <div class="contact-section">
             <!-- Replace with Formspree -->
             <h1>Contact Us</h1>
@@ -159,15 +261,7 @@
             </form>
         </div>
 
-        <div class="merch-section">
-            <h1>Merchandise</h1>
-            <p>Check out our latest merch! Click on the links below to purchase.</p>
-            <ul>
-                <li><a href="https://example.com/merch1" target="_blank">T-Shirt</a></li>
-                <li><a href="https://example.com/merch2" target="_blank">Hoodie</a></li>
-                <li><a href="https://example.com/merch3" target="_blank">Poster</a></li>
-            </ul>
-        </div>
+
 
         <div class="return-to-top-button">
             <button>
