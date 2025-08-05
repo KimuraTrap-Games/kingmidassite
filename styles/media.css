@@ -1,0 +1,60 @@
+.media-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+.media-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 🎵 Link Style */
+.media-item {
+    display: block;
+    padding: 20px;
+    background-color: #222;
+    border: 2px solid #444;
+    border-radius: 12px;
+    color: #dcaa2c;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.media-item:hover {
+    background-color: #333;
+    border-color: #dcaa2c;
+    transform: scale(1.03);
+    color: #fff;
+}
+
+/* 📷 Image Style */
+.media-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid #444;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.media-gallery img:hover {
+    transform: scale(1.03);
+    border-color: #dcaa2c;
+}
