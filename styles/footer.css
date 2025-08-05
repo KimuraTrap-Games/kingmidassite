@@ -6,8 +6,6 @@
     text-align: center; /* Center align the footer text */
     margin: -20px;
 }
-<<<<<<< Updated upstream
-=======
 
 .footer-section-wrapper a {
     color: white;
@@ -22,9 +20,7 @@
 
 .footer-credits, p {
     font-family: "KingMidasFont";
+    color: red;
+    text-decoration: none;
 }
 
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes

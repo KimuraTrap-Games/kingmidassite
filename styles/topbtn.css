@@ -1,0 +1,16 @@
+.return-to-top-button button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #dcaa2c; 
+    font-family: 'KingMidasFont', sans-serif;
+    border: solid 2px #183059;
+    padding: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.return-to-top-button button a {
+    color: white;
+    text-decoration: none;
+}
