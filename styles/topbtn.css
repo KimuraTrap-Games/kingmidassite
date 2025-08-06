@@ -1,16 +1,14 @@
-.return-to-top-button button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #dcaa2c; 
-    font-family: 'KingMidasFont', sans-serif;
-    border: solid 2px #183059;
-    padding: 20px;
-    border-radius: 50px;
-    cursor: pointer;
+#scrollTopBtn {
+  position: fixed;     /* Fixes the button relative to the viewport */
+  bottom: 20px;        /* 20px from the bottom */
+  left: 20px;          /* 20px from the left */
+  display: none;       /* Initially hidden, shown by JS */
+  z-index: 1000;       /* Ensure it appears above other elements */
+  /* You can add other styles here, like background, padding, border-radius */
 }
 
-.return-to-top-button button a {
-    color: white;
-    text-decoration: none;
+
+#scrollTopBtn:hover {
+  background-color: #dcaa2c;
+  color: #183059;
 }

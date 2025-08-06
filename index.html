@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>King//Midas</title>
-    
+
     <!-- External Stylesheet (optional but recommended) -->
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/topbtn.css">
-    <link rel="stylesheet" href="styles/bio.css">
-    <link rel="stylesheet" href="styles/media.css">
-    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/topbtn.css" />
+    <link rel="stylesheet" href="styles/bio.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+    <link rel="stylesheet" href="styles/mobile.css" />
 
     <!-- Optional Meta Description for SEO -->
-    <meta name="description" content="Official website of King//Midas. Designed by KimuraTrap Studios.">
+    <meta name="description" content="Official website of King//Midas. Designed by KimuraTrap Studios." />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section (Static at the top) -->
@@ -27,103 +32,113 @@
         </div>
         <!-- Future: Navigation links could go here -->
         <nav class="navigation">
-            <!-- Links will navigate the cascading page of the site, taking the user to each section of the site. -->
-            <a href="#">Home</a>
+            <!-- Links will navigate the cascading page of the site. -->
+            <a href="#home">Home</a>
             <a href="#bio">Bio</a>
             <a href="#events">Events</a>
             <a href="#media">Media</a>
             <a href="#contact">Contact</a>
             <a href="#merch">Merch</a>
-        </div>
+        </nav>
     </div>
 
     <!-- Main Content Section -->
     <main class="content-section-wrapper">
         <!-- Primary Message -->
-
-        <div class="home-section" id="#">
+        <div class="home-section" id="home">
             <div class="grid-container">
                 <div class="grid-item">
-                    <img src="images/KMBand.jpg" alt="Poster of the band for a king midas concert.">
+                    <img src="images/KMBand.jpg" alt="Poster of the band for a king midas concert." />
                 </div>
 
                 <div class="grid-item">
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, error tenetur placeat, quod rerum iste ipsam laborum tempora libero et, minima in pariatur non fuga a quas. Mollitia, amet voluptates? Provident saepe, sed minima eaque magni aliquid magnam quae dolores ab cumque officiis modi facilis. Voluptatibus fugit ullam itaque quaerat?</h4>  
+                    <h4>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, error tenetur placeat, quod rerum iste ipsam laborum tempora libero et, minima in pariatur non fuga a quas. Mollitia, amet voluptates? Provident saepe, sed minima eaque magni aliquid magnam quae dolores ab cumque officiis modi facilis. Voluptatibus fugit ullam itaque quaerat?
+                    </h4>
                 </div>
 
                 <div class="grid-item">
-                    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, nisi. Nisi reiciendis, eaque neque facilis eveniet explicabo omnis pariatur, culpa molestias dolores, error sed perferendis ad! Voluptate doloribus eos, quidem consequatur impedit minus a sit nihil? Recusandae esse cupiditate accusamus quod magnam ullam neque eos, suscipit quam distinctio voluptatibus! Atque, porro similique, placeat animi nam obcaecati dolor beatae saepe maiores totam eligendi id est sapiente. Sapiente porro necessitatibus minus provident explicabo fugit itaque ducimus repudiandae, laboriosam suscipit sunt aut, voluptatibus nihil? Accusantium labore numquam perferendis animi doloribus, obcaecati officiis at. Qui natus dolor voluptatem! Voluptates impedit voluptate odio unde. Quaerat?</h4>
+                    <h4>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, nisi. Nisi reiciendis, eaque neque facilis eveniet explicabo omnis pariatur, culpa molestias dolores, error sed perferendis ad! Voluptate doloribus eos, quidem consequatur impedit minus a sit nihil? Recusandae esse cupiditate accusamus quod magnam ullam neque eos, suscipit quam distinctio voluptatibus! Atque, porro similique, placeat animi nam obcaecati dolor beatae saepe maiores totam eligendi id est sapiente. Sapiente porro necessitatibus minus provident explicabo fugit itaque ducimus repudiandae, laboriosam suscipit sunt aut, voluptatibus nihil? Accusantium labore numquam perferendis animi doloribus, obcaecati officiis at. Qui natus dolor voluptatem! Voluptates impedit voluptate odio unde. Quaerat?
+                    </h4>
                 </div>
 
                 <div class="grid-item">
-                    <img src="images/bandpic2.jpg" alt="">
+                    <img src="images/bandpic2.jpg" alt="" />
                 </div>
             </div>
         </div>
 
-
-        <!-- Scroll-to-top Button (to be styled and handled with JS later) -->
+        <!-- Scroll-to-top Button -->
         <button id="scrollTopBtn" title="Go to top">↑</button>
+
         <div class="bio-section" id="bio">
             <h1 class="section-title">Meet the Band</h1>
             <div class="grid-container">
                 <!-- Jeremy -->
                 <div class="grid-item image">
-                    <img src="images/jeremy1.jpg" alt="Jeremy">
+                    <img src="images/jeremy1.jpg" alt="Jeremy" />
                 </div>
                 <div class="grid-item bio">
                     <h2>Jeremy</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam deserunt vitae animi quo ipsum ea, cupiditate quisquam consequatur. Harum, ipsam.</p>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam deserunt vitae animi quo ipsum ea, cupiditate quisquam consequatur. Harum, ipsam.
+                    </p>
                 </div>
 
                 <!-- Axel -->
                 <div class="grid-item bio">
                     <h2>Axel</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, dolore. Expedita blanditiis dolore harum ratione laudantium qui vel esse animi.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, dolore. Expedita blanditiis dolore harum ratione laudantium qui vel esse animi.
+                    </p>
                 </div>
                 <div class="grid-item image">
-                    <img src="images/axel1color.jpg" alt="Axel">
+                    <img src="images/axel1color.jpg" alt="Axel" />
                 </div>
 
                 <!-- Doug -->
                 <div class="grid-item image">
-                    <img src="images/bandpic1.jpg" alt="Jeremy">
+                    <img src="images/bandpic1.jpg" alt="Jeremy" />
                 </div>
                 <div class="grid-item bio">
                     <h2>Doug</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam deserunt vitae animi quo ipsum ea, cupiditate quisquam consequatur. Harum, ipsam.</p>
-                </div>                
-                
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam deserunt vitae animi quo ipsum ea, cupiditate quisquam consequatur. Harum, ipsam.
+                    </p>
+                </div>
+
                 <!-- Jose -->
                 <div class="grid-item bio">
                     <h2>Jose</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, dolore. Expedita blanditiis dolore harum ratione laudantium qui vel esse animi.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, dolore. Expedita blanditiis dolore harum ratione laudantium qui vel esse animi.
+                    </p>
                 </div>
                 <div class="grid-item image">
-                    <img src="images/bandpic2.jpg" alt="Axel">
+                    <img src="images/bandpic2.jpg" alt="Axel" />
                 </div>
-                
+
                 <!-- Other -->
                 <div class="grid-item image">
-                    <img src="images/KMBand.jpg" alt="Jeremy">
+                    <img src="images/KMBand.jpg" alt="Jeremy" />
                 </div>
                 <div class="grid-item bio">
                     <h2>Drummer</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam deserunt vitae animi quo ipsum ea, cupiditate quisquam consequatur. Harum, ipsam.</p>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam deserunt vitae animi quo ipsum ea, cupiditate quisquam consequatur. Harum, ipsam.
+                    </p>
                 </div>
-                
-                <!-- Other -->
-                
             </div>
         </div>
 
         <div class="event-section" id="events">
             <h1>Upcoming Events</h1>
-                <ul>
-                    <li>Event 1: Date, Location, Details</li>
-                    <li>Event 2: Date, Location, Details</li>
-                    <li>Event 3: Date, Location, Details</li>
-                </ul>
+            <ul>
+                <li>Event 1: Date, Location, Details</li>
+                <li>Event 2: Date, Location, Details</li>
+                <li>Event 3: Date, Location, Details</li>
+            </ul>
         </div>
 
         <div class="media-section" id="media">
@@ -137,31 +152,47 @@
                 <a href="https://www.youtube.com/watch?v=def789" target="_blank" class="media-item">🎵 Song 3</a>
 
                 <!-- Images -->
-                <img src="images/bandpic1.jpg" alt="">
-                <img src="images/bandpic2.jpg" alt="">
-                <img src="images/bandpic2.jpg" alt="">
-
+                <img src="images/bandpic1.jpg" alt="" />
+                <img src="images/bandpic2.jpg" alt="" />
+                <img src="images/bandpic2.jpg" alt="" />
             </div>
         </div>
 
         <div class="contact-section" id="contact">
-        <!-- Replace with Formspree -->
-    <h1>Contact Us</h1>
-    <p>If you have any questions, booking inquiries, or just want to say hi, feel free to reach out!</p>
-    <form action="#" method="post">
-        <label for="name" style="display:block;">Name:</label>
-        <input type="text" id="name" name="name" required style="display:block; width:300px; margin-bottom:10px;">
+            <!-- Replace with Formspree -->
+            <h1>Contact Us</h1>
+            <p>If you have any questions, booking inquiries, or just want to say hi, feel free to reach out!</p>
+            <form action="#" method="post">
+                <label for="name" style="display:block;">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    style="display:block; width:300px; margin-bottom:10px"
+                />
 
-        <label for="email" style="display:block;">Email:</label>
-        <input type="email" id="email" name="email" required style="display:block; width:300px; margin-bottom:10px;">
+                <label for="email" style="display:block;">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    style="display:block; width:300px; margin-bottom:10px"
+                />
 
-        <label for="message" style="display:block;">Message:</label>
-        <textarea id="message" name="message" rows="4" required style="display:block; width:300px; margin-bottom:10px;"></textarea>
+                <label for="message" style="display:block;">Message:</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                    style="display:block; width:300px; margin-bottom:10px"
+                ></textarea>
 
-        <button type="submit">Send Message</button>
-    </form>
-</div>
-
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
 
         <div class="merch-section" id="merch">
             <h1>Merchandise</h1>
@@ -171,13 +202,6 @@
                 <li><a href="https://example.com/merch2" target="_blank">Hoodie</a></li>
                 <li><a href="https://example.com/merch3" target="_blank">Poster</a></li>
             </ul>
-        </div>
-        
-
-        <div class="return-to-top-button">
-            <button>
-                <a href="#top">Top</a>
-            </button>
         </div>
     </main>
 
@@ -202,12 +226,36 @@
         <div class="footer-credits">
             <p><center>© 2025 King//Midas</center></p>
 
-            <hr>
+            <hr />
 
             <div class="kts-link">
-                <p><center>Designed and Developed by <a href="https://kimuratrapstudios.com" target="_blank">KimuraTrap Studios LLC</a></center></p>
+                <p>
+                    <center>Designed and Developed by
+                        <a href="https://kimuratrapstudios.com" target="_blank">KimuraTrap Studios LLC</a>
+                    </center>
+                </p>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Scroll button show/hide
+        window.onscroll = function () {
+            const btn = document.getElementById("scrollTopBtn");
+            if (
+                document.body.scrollTop > 300 ||
+                document.documentElement.scrollTop > 300
+            ) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        // Scroll to top when clicked
+        document.getElementById("scrollTopBtn").onclick = function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+    </script>
 </body>
 </html>
