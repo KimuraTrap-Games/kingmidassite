@@ -3,7 +3,7 @@ body {
 }
 
 .content-section-wrapper {
-    background-color: #353535; /* Dark background for the home section */
+    background-color: #0d0d0d; /* Dark background for the home section */
     color: white;
     margin: -10px; /* Adjust margin to align with other sections */
     padding: 20px;
