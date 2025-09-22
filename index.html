@@ -152,7 +152,7 @@
                 <a href="https://www.youtube.com/watch?v=def789" target="_blank" class="media-item">🎵 Song 3</a>
             </div>
 
-        <!-- Image Carousel -->
+        <!-- Peek Carousel -->
         <div class="carousel">
         <button class="carousel-btn prev" aria-label="Previous slide">‹</button>
 
@@ -172,6 +172,7 @@
         <button class="carousel-btn next" aria-label="Next slide">›</button>
         </div>
 
+
         <script>
             const track = document.querySelector('.carousel-track');
             const slides = Array.from(track.children);
@@ -181,7 +182,10 @@
             let index = 0;
 
             function updateSlide() {
-            track.style.transform = `translateX(-${index * 100}%)`;
+            // Move track so the selected slide is centered
+            const slideWidth = slides[0].offsetWidth + parseFloat(getComputedStyle(slides[0]).marginLeft) * 2;
+            const offset = index * slideWidth;
+            track.style.transform = `translateX(calc(50vw - ${slides[0].offsetWidth/2}px - ${offset}px))`;
             }
 
             nextBtn.addEventListener('click', () => {
@@ -192,6 +196,9 @@
             index = (index - 1 + slides.length) % slides.length;
             updateSlide();
             });
+
+            window.addEventListener('resize', updateSlide);
+            updateSlide(); // center first slide
         </script>
 
         <!-- Lightbox Overlay -->
