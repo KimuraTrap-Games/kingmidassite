@@ -152,20 +152,47 @@
                 <a href="https://www.youtube.com/watch?v=def789" target="_blank" class="media-item">🎵 Song 3</a>
             </div>
 
-            <div class="media-gallery">
-                <!-- Images -->
-                <img src="images/bandimages/01.jpg" alt="" />
-                <img src="images/bandimages/02.jpg" alt="" />
-                <img src="images/bandimages/03.jpg" alt="" />
-                <img src="images/bandimages/04.jpg" alt="" />
-                <img src="images/bandimages/05.jpg" alt="" />
-                <img src="images/bandimages/06.jpg" alt="" />
-                <img src="images/bandimages/07.jpg" alt="" />
-                <img src="images/bandimages/08.jpg" alt="" />
-                <img src="images/bandimages/09.jpg" alt="" />
-                <img src="images/bandimages/10.jpg" alt="" />
-            </div>
+        <!-- Image Carousel -->
+        <div class="carousel">
+        <button class="carousel-btn prev" aria-label="Previous slide">‹</button>
+
+        <div class="carousel-track">
+            <img src="images/bandimages/01.jpg" alt="">
+            <img src="images/bandimages/02.jpg" alt="">
+            <img src="images/bandimages/03.jpg" alt="">
+            <img src="images/bandimages/04.jpg" alt="">
+            <img src="images/bandimages/05.jpg" alt="">
+            <img src="images/bandimages/06.jpg" alt="">
+            <img src="images/bandimages/07.jpg" alt="">
+            <img src="images/bandimages/08.jpg" alt="">
+            <img src="images/bandimages/09.jpg" alt="">
+            <img src="images/bandimages/10.jpg" alt="">
         </div>
+
+        <button class="carousel-btn next" aria-label="Next slide">›</button>
+        </div>
+
+        <script>
+            const track = document.querySelector('.carousel-track');
+            const slides = Array.from(track.children);
+            const nextBtn = document.querySelector('.carousel-btn.next');
+            const prevBtn = document.querySelector('.carousel-btn.prev');
+
+            let index = 0;
+
+            function updateSlide() {
+            track.style.transform = `translateX(-${index * 100}%)`;
+            }
+
+            nextBtn.addEventListener('click', () => {
+            index = (index + 1) % slides.length;
+            updateSlide();
+            });
+            prevBtn.addEventListener('click', () => {
+            index = (index - 1 + slides.length) % slides.length;
+            updateSlide();
+            });
+        </script>
 
         <!-- Lightbox Overlay -->
 <div id="lightbox">
